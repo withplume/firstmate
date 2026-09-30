@@ -1,0 +1,21 @@
+ok - codex auto-arm: actionable close starts a successor, commits rewake, and queues one envelope to the payload session
+ok - codex auto-arm: delivery uses the portable bounded runner on a host without GNU timeout
+ok - codex auto-arm: quiet close records clean and delivers nothing
+ok - codex auto-arm: one failure notice per episode, later failures still deliver their retry
+ok - codex auto-arm: queue failure rewrites the epoch to failed, keeps the successor, and exits 0
+ok - codex auto-arm: inert in a linked child worktree even when in-flight
+ok - codex auto-arm: inert with no session lock
+ok - codex auto-arm: inert without arm or delivery when another live harness owns the home
+ok - codex auto-arm: the away daemon owns supervision, so the hook never arms or delivers
+ok - codex auto-arm: repeated Stop firings produce exactly one generation owner and one arm
+ok - codex auto-arm: a rapid second Stop while the first arm parks defers to the open claim
+ok - codex auto-arm: repeated idle-to-wake cycles deliver and re-cover exactly once per close
+ok - codex auto-arm: a mid-arm signal records the failure episode durably and never delivers
+ok - codex auto-arm: a codex launcher carrying the exec token never parks a headless run
+ok - codex auto-arm: exec text above the codex launcher never stands an interactive session down
+ok - codex auto-arm: a validly marked secondmate home is guarded like a main primary
+ok - codex auto-arm: a session-id-less payload arms, starts the successor, and records failed instead of a phantom rewake
+ok - codex auto-arm: any argument is refused before anything is sourced or armed
+ok - codex auto-arm: an idle home with no supervision need stays inert
+ok - codex auto-arm: a Cursor-delivered payload stands the hook down
+ok - codex auto-arm: a pi-code-delivered payload stands the hook down
